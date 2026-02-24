@@ -10,6 +10,9 @@
 
 .clue-container div,
 .flex-container .row div {
+    /* I'm concerned that the divs in the wrapped flexboxes should have flex: 1 1 0%,
+    or at least be able to grow, but I'm not sure how to make sure they stay exactly
+    four per row*/
     color: red;
     background: cyan;
     border: 4px solid hotpink;
@@ -30,4 +33,8 @@
     display: flex;
     flex-direction: row;
     flex: 1 1 0%;
+}
+
+caption {
+    caption-side: bottom;
 }
